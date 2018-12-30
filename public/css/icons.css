@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('http://resto.local/fonts/icomoon.eot?l3pf0e');
+    src: url('http://resto.local/fonts/icomoon.eot?l3pf0e#iefix') format('embedded-opentype'),
+        url('http://resto.local/fonts/icomoon.ttf?l3pf0e') format('truetype'),
+        url('http://resto.local/fonts/icomoon.woff?l3pf0e') format('woff'),
+        url('http://resto.local/fonts/icomoon.svg?l3pf0e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+i::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-envelope::before,
+.icon-envelope::after {
+    content: "\e900";
+}
+
+.icon-facebook::before,
+.icon-facebook::after {
+    content: "\e901";
+}
+
+.icon-tar::before,
+.icon-tar::after {
+    content: "\e902";
+}
+
+.icon-google-plus::before,
+.icon-google-plus::after {
+    content: "\e903";
+}
+
+.icon-instagram::before,
+.icon-instagram::after {
+    content: "\e904";
+}
+
+.icon-telephone::before,
+.icon-telephone::after {
+    content: "\e905";
+}
+
+.icon-thumb-down::before,
+.icon-thumb-down::after {
+    content: "\e906";
+}
+
+.icon-thumb-up::before,
+.icon-thumb-up::after {
+    content: "\e907";
+}
+
+.icon-tripadvisor::before,
+.icon-tripadvisor::after {
+    content: "\e908";
+}
+
+.icon-twitter::before,
+.icon-twitter::after {
+    content: "\e909";
+}
+.icon-envelope,
+.icon-facebook,
+.icon-tar,
+.icon-google-plus,
+.icon-instagram,
+.icon-telephone,
+.icon-tripadvisor,
+.icon-twitter {
+    position: relative;
+}
+
+.icon-envelope::after,
+.icon-facebook::after,
+.icon-tar::after,
+.icon-google-plus::after,
+.icon-instagram::after,
+.icon-telephone::after,
+.icon-tripadvisor::after,
+.icon-twitter::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,44 @@
+@function color($color) {
+    @return map-get($map: $colors, $key: $color);
+}
+
+@function font($font) {
+    @return map-get($map: $fonts, $key: $font), sans-serif;
+}
+
+@function pythagoras($side_1, $side_2) {
+    @return sqrt(($side_1 * $side_1)+($side_2 * $side_2)) + px;
+}
+
+/* source https://www.antimath.info/css/sass-sqrt-function/ */
+@function sqrt($r) {
+    $x0: 1;
+    $x1: $x0;
+
+    @for $i from 1 through 10 {
+        $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+        $x0: $x1;
+    }
+
+    @return $x1;
+}
+
+/* mixins for responsive designing */
+
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin ultrawide {
+    @media (min-width: 2000px) {
+        @content;
+    }
+}

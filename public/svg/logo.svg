@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        font-size: 541.667px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: "Golden Plains - Demo";
+      }
+
+      .cls-3 {
+        font-size: 208.333px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="13" y="34" width="475" height="427" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDc1IiBoZWlnaHQ9IjQyNyIgdmlld0JveD0iMCAwIDQ3NSA0MjciPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNDc1IiB5MT0iMzA5LjQ1NiIgeDI9IjAiIHkyPSIxMTcuNTQ0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiZjNhMyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMzQ4IiBzdG9wLWNvbG9yPSIjYjY4NjQ4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZiZjNhMyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDc1IiBoZWlnaHQ9IjQyNyIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="text" class="cls-1">
+    <text id="R" class="cls-2" transform="translate(53.955 380.821) rotate(3.181)">R</text>
+    <text id="esto" class="cls-3" x="192" y="380">esto</text>
+  </g>
+</svg>

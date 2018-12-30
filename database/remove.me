@@ -1,0 +1,21 @@
+database structure
+categories  
+    id              -   auto increment, not null, primary key
+    name            -   varchar, not null   
+    active          -   boolean, default is true
+    created at      -   timestamp
+    modified at     -   timestamp
+
+menu_items
+    id              -   auto increment, not null, primary key
+    catId           -   int, not null, foreign key (categories id)
+    text            -   varchar, not null
+    active          -   boolean, default is true
+    created at      -   timestamp
+    modified at     -   timestamp
+
+reviews
+    id              -   auto increment, not null, primary key
+    author          -   varchar, not null
+    content         -   text, not null
+    created at      -   timestamp

@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'ropa-sans';
+  src: url("http://resto.local/fonts/RopaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'golden plains';
+  src: url("http://resto.local/fonts/Golden Plains - Demo.ttf");
+}
+
+/* source https://www.antimath.info/css/sass-sqrt-function/ */
+
+/* mixins for responsive designing */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #bfc1c2;
+  font-size: 18px;
+  font-family: "ropa-sans", sans-serif;
+}
+
+body h2,
+body h3,
+body h4,
+body a {
+  text-transform: capitalize;
+}
+
+body a {
+  color: #bfc1c2;
+  text-decoration: none;
+}
+
+body img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  border: 2px solid #b68648;
+  border-radius: 15px;
+}
+
+main article {
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+}
+
+main article#edit section {
+  margin-bottom: 20px;
+}
+
+main article h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+main article section {
+  margin-bottom: 5px;
+}
+
+main article section:last-of-type {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main article section h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+main article section .button {
+  position: relative;
+  height: 35px;
+  color: #bfc1c2;
+  font-size: 18px;
+  background: rgba(191, 193, 194, 0.3);
+  padding: 0 10px;
+  border: 1px solid #bfc1c2;
+  border-radius: 20px;
+  line-height: 35px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+main article section .button:hover {
+  color: #fbf3a3;
+  border-color: #fbf3a3;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+input[type=checkbox]:checked + label {
+  background: #fbf3a3;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+input[type=checkbox]:checked + label::before {
+  left: calc(100% - 22px - 4px);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  background: white;
+  border: 2px solid;
+  color: black;
+  border-radius: 50%;
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
+}
+
